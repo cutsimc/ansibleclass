@@ -5,9 +5,8 @@
   tasks:
   - name: Ensure group developers exists
     group:
-      name: Developers
+      name: "{{ item }}"
       state: present
-
     loop:
       - It
       - Developers
