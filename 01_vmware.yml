@@ -25,7 +25,7 @@
       validate_certs: "False"
     delegate_to: "localhost"
 
- - name: Add a PortGroup to VMware vSwitch
+  - name: Add a PortGroup to VMware vSwitch
     vmware_portgroup:
       hostname: "{{ hostname }}"
       username: "{{ username }}"
