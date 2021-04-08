@@ -16,7 +16,7 @@
   - name: Create Users
     ansible.builtin.user:
       name: "{{ item.name }}"
-     group: "{{ item.groups }}"
+      group: "{{ item.groups }}"
     loop:
       - { name: 'homer', groups: 'Developers' }
       - { name: 'bart', groups: 'It' }
